@@ -14,7 +14,8 @@ public class BudgetGoal
     private double goal;
 
     // ~ Constructors ..........................................................
-
+    
+    // -------------------------------------------------------------------------
     /**
      * Creates a new BudgetGoal.
      *
@@ -35,7 +36,7 @@ public class BudgetGoal
 
     // ~ Public Methods ........................................................
 
-
+    // -------------------------------------------------------------------------
     /**
      * Returns the current budget goal.
      *
@@ -46,7 +47,7 @@ public class BudgetGoal
         return this.goal;
     }
 
-
+    // -------------------------------------------------------------------------
     /**
      * Changes the budget goal.
      *
@@ -63,7 +64,7 @@ public class BudgetGoal
         this.goal = goal;
     }
 
-
+    // -------------------------------------------------------------------------
     /**
      * Determines whether total spending is greater than the goal. Spending
      * exactly equal to the goal is not over budget.
@@ -77,7 +78,7 @@ public class BudgetGoal
         return totalSpent > this.goal;
     }
 
-
+    // -------------------------------------------------------------------------
     /**
      * Calculates how much money remains in the budget. A negative result means
      * the user is over budget.
@@ -91,7 +92,7 @@ public class BudgetGoal
         return this.goal - totalSpent;
     }
 
-
+    // -------------------------------------------------------------------------
     /**
      * Calculates the percentage of the budget that has been used. The result
      * can be greater than 100 if the user is over budget.
