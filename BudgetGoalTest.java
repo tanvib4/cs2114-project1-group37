@@ -2,8 +2,7 @@ import student.TestCase;
 
 // -------------------------------------------------------------------------
 /**
- * Write a one-sentence summary of your class here. Follow it with additional
- * details about its purpose, what abstraction it represents, and how to use it.
+ * test BudgetGoal class
  * 
  * @author Liangru Ji
  * @version 2026.9.23

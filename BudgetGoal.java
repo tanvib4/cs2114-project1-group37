@@ -1,3 +1,4 @@
+// ------------------------------------------------------------------------
 /**
  * Stores the user's budget goal and performs calculations using the total
  * spending supplied by BudgetTracker. BudgetGoal does not store transactions or
