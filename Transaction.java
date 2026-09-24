@@ -33,7 +33,7 @@ public class Transaction {
     public Transaction(double amount, String type, String description, LocalDate date)
     {
         if (amount <= 0) {
-            throw new IllegalArugmentException("Amount needs to be positive");
+            throw new IllegalArgumentException("Amount needs to be positive");
         }
         if (!"income".equals(type) && !"expense".equals(type)) {
             throw new IllegalArgumentException("Type should be either income or expense.");
@@ -88,6 +88,7 @@ public class Transaction {
      * @return a readable line that helps the user understand the description of the transaction.
      */
     public String toString() {
-        return this.date + " " + this.type + " $" + this.amount + " " + this.description;
+        return this.date + " " + this.type + " $" + String.format("%.2f", this.amount) 
+        + " " + this.description;
     } 
 }

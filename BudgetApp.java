@@ -111,7 +111,7 @@ public class BudgetApp {
 
         double amount = input.readPositiveDouble("Enter goal amount: ");
         goal.setGoal(amount);
-        System.out.println("Goal set to $" + amount);
+        System.out.println("Goal set to $" + money(amount));
     }
 
     /**
@@ -139,19 +139,37 @@ public class BudgetApp {
         System.out.println("----- Budget Status -----");
 
         double spent = tracker.getTotalSpent();
-        System.out.println("Balance: $" + tracker.getTotal());
-        System.out.println("Total spent: $" + spent);
+        System.out.println("Balance: $" + money(tracker.getTotal()));
+        System.out.println("Total spent: $" + money(spent));
 
         if (goal.getGoal() == 0) {
             System.out.println("No goal set yet.");
         }
-        else if (goal.isOverBudget(spent)) {
-            System.out.println("You are $" + (spent - goal.getGoal())
-                + " over your $" + goal.getGoal() + " goal.");
-        }
         else {
-            System.out.println("You have $" + goal.amountRemaining(spent)
-                + " left of your $" + goal.getGoal() + " goal.");
+            System.out.println("Goal used: " + money(goal.percentUsed(spent))
+                + "%");
+
+            if (goal.isOverBudget(spent)) {
+                System.out.println("You are $"
+                    + money(-goal.amountRemaining(spent)) + " over your $"
+                    + money(goal.getGoal()) + " goal.");
+            }
+            else {
+                System.out.println("You have $"
+                    + money(goal.amountRemaining(spent)) + " left of your $"
+                    + money(goal.getGoal()) + " goal.");
+            }
         }
+    }
+
+    /**
+     * Formats an amount to two decimal places so money never prints as
+     * 3.0000000000000004. Formatting only; no calculation happens here.
+     *
+     * @param amount the value to format
+     * @return the amount as text with exactly two decimals
+     */
+    private String money(double amount) {
+        return String.format("%.2f", amount);
     }
 }

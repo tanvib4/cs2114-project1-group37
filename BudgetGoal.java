@@ -18,6 +18,15 @@ public class BudgetGoal
     
     // -------------------------------------------------------------------------
     /**
+     * Creates a new BudgetGoal with no target set yet. 
+     * The goal is 0 until setGoal is called.
+     */
+    public BudgetGoal()
+    {
+        this.goal = 0;
+    }
+
+    /**
      * Creates a new BudgetGoal.
      *
      * @param goal
