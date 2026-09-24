@@ -7,6 +7,11 @@ record income and expense transactions, set a spending goal, and see at a
 glance how your spending compares to that goal.
 
 ---
+## System diagram
+![System diagram](system-diagram.png)
+
+## UML diagram
+![Class diagram](uml-diagram.png)
 
 ## Authors
 
@@ -18,8 +23,9 @@ glance how your spending compares to that goal.
 | `BudgetTracker.java` | Ehren Casto |
 | `BudgetTrackerTest.java` | Ehren Casto |
 | `InputReader.java` | Golden You |
+| `InputReaderTest.java` | Golden You |
 | `Transaction.java` | Tanvi Bhat |
-| `Transaction.java` | Tanvi Bhat |
+| `TransactionTest.java` | Tanvi Bhat |
 
 ---
 
@@ -30,7 +36,7 @@ glance how your spending compares to that goal.
 - Set a monthly (or any-period) spending goal
 - View the full transaction history in chronological order
 - View your current balance, total spent, and goal progress at any time
-- Robust input validation — every prompt re-asks until the answer is usable
+- Robust input validation: every prompt re-asks until the answer is usable
 
 ---
 
