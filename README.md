@@ -8,7 +8,7 @@ glance how your spending compares to that goal.
 
 ---
 ## System diagram
-![System diagram](system-diagram.png)
+![System diagram](systems-diagram.png)
 
 ## UML diagram
 ![Class diagram](uml-diagram.png)
