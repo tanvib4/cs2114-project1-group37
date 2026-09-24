@@ -1,5 +1,4 @@
 import java.util.*;
-
 /**
  * Stores the history of {@link Transaction} objects and provides
  * calculations derived from that history, such as the current balance
