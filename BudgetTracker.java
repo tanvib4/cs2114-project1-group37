@@ -12,6 +12,8 @@ import java.util.*;
  * The balance and total spent are computed from {@code history} on each
  * call rather than cached, so they can never drift out of sync with the
  * recorded transactions.
+ * @author Ehren Casto
+ * @version Sep 23, 2026
  */
 public class BudgetTracker {
     /**
