@@ -19,6 +19,7 @@ glance how your spending compares to that goal.
 | `BudgetTrackerTest.java` | Ehren Casto |
 | `InputReader.java` | Golden You |
 | `Transaction.java` | Tanvi Bhat |
+| `Transaction.java` | Tanvi Bhat |
 
 ---
 
