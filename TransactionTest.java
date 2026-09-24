@@ -4,7 +4,7 @@ import java.time.LocalDate;
 /**
  * Tests for the Transaction class.
  *
- * @author bhatr
+ * @author Tanvi Bhat
  * @version Sep 17, 2026
  */
 public class TransactionTest extends TestCase {
